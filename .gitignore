@@ -2,7 +2,5 @@ __pycache__/
 .idea/*
 .vscode/*
 /data
-/tmp
-/logs
 /slides
 /safetyBatches_unzipped

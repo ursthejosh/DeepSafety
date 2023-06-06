@@ -1,0 +1,57 @@
+Types of possible signs:
+
+See signnames.csv
+
+First Exercise:
+
+  Validation with Batch_0:
+
+    Found 39209 files belonging to 43 classes.
+    Train Classes available:  ['0' '1' '10' '11' '12' '13' '14' '15' '16' '17' '18' '19' '2' '20' '21'
+     '22' '23' '24' '25' '26' '27' '28' '29' '3' '30' '31' '32' '33' '34' '35'
+     '36' '37' '38' '39' '4' '40' '41' '42' '5' '6' '7' '8' '9']
+    Found 17 files belonging to 5 classes.
+    Val Classes available:  ['0' '1' '10' '11' '12']
+    Predictions:  [ 0  1  1  1  1 10 10 25 11 11 11 11 12 12 12 12 12]Ground truth:  [ 0  1  1  1  1 10 10 11 11 11 11 11 12 12 12 12 12]
+    Accuracy:  0.9411765
+    Class ID: 0 Class Name: Speed limit (20km/h)
+
+    Fault: 'Right of way at next intersection' is seen as 'road work'
+
+  Validation with Batch_1:
+
+    Found 39209 files belonging to 43 classes.
+    Train Classes available:  ['0' '1' '10' '11' '12' '13' '14' '15' '16' '17' '18' '19' '2' '20' '21'
+     '22' '23' '24' '25' '26' '27' '28' '29' '3' '30' '31' '32' '33' '34' '35'
+     '36' '37' '38' '39' '4' '40' '41' '42' '5' '6' '7' '8' '9']
+    Found 50 files belonging to 1 classes.
+    Val Classes available:  ['42']
+    Predictions:  [42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42
+     42 42 42 42 34 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42
+     42 42]
+    Ground truth:  [42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42
+     42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42
+     42 42]
+    Accuracy:  0.98
+    Class ID: 42 Class Name: End of no passing by vehicles over 3.5 metric tons
+
+    Fault: 'End of no passing by vehicles over 3.5 metric tons' is seen as 'turn left ahead'
+
+
+Second Exercise:
+
+  Validation with Batch_2:
+
+    Found 39209 files belonging to 43 classes.
+    Train Classes available:  ['0' '1' '10' '11' '12' '13' '14' '15' '16' '17' '18' '19' '2' '20' '21'
+     '22' '23' '24' '25' '26' '27' '28' '29' '3' '30' '31' '32' '33' '34' '35'
+     '36' '37' '38' '39' '4' '40' '41' '42' '5' '6' '7' '8' '9']
+    Found 2100 files belonging to 1 classes.
+    Val Classes available:  ['12']
+    Predictions:  [12 12 12 ... 12 12 12]
+    Ground truth:  [12 12 12 ... 12 12 12]
+    Accuracy:  0.99523807
+    Class ID: 12 Class Name: Priority road
+
+    
+
