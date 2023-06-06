@@ -16,7 +16,7 @@ def main():
     # //////////////////////////////////////// Load data
     # You will need to unzip the respective batch folders.
     # Obviously Batch_0 is not sufficient for testing as you will soon find out.
-    val_data_root = "./safetyBatches/Batch_0/"
+    val_data_root = "./safetyBatches_unzipped/Batch_0/"
     train_data_root = "./data/Train/"
 
     batch_size = 32
