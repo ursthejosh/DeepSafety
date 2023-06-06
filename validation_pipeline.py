@@ -77,6 +77,28 @@ def main():
     print(
         f'Class ID: {predictions[0]} Class Name: {class_names_df["SignName"][predictions[0]]}'
     )
+    false_pred = []
+    """
+    for i in (0, (len(predictions)-1) ):
+        if predictions[i]!=test_labels[i]:
+            false_pred.append(predictions[i])
+            false_pred.append(test_labels[i])
+    
+    num_false_pred = len(false_pred)/2
+    print("Number of False predictions: {}".format(num_false_pred))
+    for i in (range(0, len(false_pred), 2)):
+        print(
+            f"Following predictions were wrong: {false_pred[i]}, should be: {false_pred[i+1]}"
+        )
+    """
+    # -------- print false predictions --------
+    for i in range(0, len(predictions)):
+        if predictions[i] != test_labels[i]:
+            picture_mainnum = int(i/30)
+            picture_derivative_num = i % 30 
+            print(
+                f'Index: {i}, picture: {picture_mainnum}_{picture_derivative_num} is false labeled as: {class_names_df["SignName"][predictions[i]]}, should be: {class_names_df["SignName"][test_labels[i]]}'
+            )
 
     # There is more and this should get you started: https://www.tensorflow.org/api_docs/python/tf/keras/metrics
     # However it is not about how many metrics you crank out, it is about whether you find the meaningful ones and report on them.
