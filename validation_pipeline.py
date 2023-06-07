@@ -9,14 +9,14 @@ import pandas as pd
 
 def main():
     # //////////////////////////////////////// Load model
-    model_name = "1686009518"
+    model_name = "1686131862"
     import_path = "./tmp/saved_models/{}".format(int(model_name))
     model = tf.keras.models.load_model(import_path)
 
     # //////////////////////////////////////// Load data
     # You will need to unzip the respective batch folders.
     # Obviously Batch_0 is not sufficient for testing as you will soon find out.
-    val_data_root = "./safetyBatches_unzipped/Batch_0/"
+    val_data_root = "./safetyBatches_unzipped/Batch_3/"
     train_data_root = "./data/Train/"
 
     batch_size = 32
